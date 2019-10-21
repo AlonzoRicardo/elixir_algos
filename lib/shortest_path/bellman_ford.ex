@@ -3,7 +3,7 @@ defmodule AlgosAdvanced.ShortestPath.BellmanFord do
   O(|V| * E), can approximate O(n^2) if every vertex has at least one outgoing edge.
   """
 
-  def calculate(v \\ @vertices, g \\ @graph, m \\ @memo, vv \\ @vertices, s? \\ nil)
+  def calculate(v, g, m, vv, s? \\ nil)
 
   def calculate([], _g, m, _vv, true), do: {:negative_cycle, m}
   def calculate(_v, _g, m, _vv, false), do: m
