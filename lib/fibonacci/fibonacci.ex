@@ -45,10 +45,4 @@ defmodule AlgosAdvanced.Fibonacci.Iterative do
 
     fib
   end
-
-  # def calculateFibAt(n, c, fib1, fib2) when c == n, do: fib1 + fib2
-
-  # def calculateFibAt(n, c, fib1, fib2) do
-  #   calculateFibAt(n, c + 1, fib2, fib2 + fib1)
-  # end
 end
